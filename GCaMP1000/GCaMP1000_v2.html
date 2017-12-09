@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+.ticks {
+  font: 14px sans-serif;
+}
+
+.track,
+.track-inset,
+.track-overlay {
+  stroke-linecap: round;
+}
+
+.track {
+  stroke: #000;
+  stroke-opacity: 0.3;
+  stroke-width: 10px;
+}
+
+.track-inset {
+  stroke: #ddd;
+  stroke-width: 8px;
+}
+
+.track-overlay {
+  pointer-events: stroke;
+  stroke-width: 50px;
+  stroke: transparent;
+}
+
+.handle {
+  fill: #fff;
+  stroke: #000;
+  stroke-opacity: 0.5;
+  stroke-width: 1.25px;
+}
+
+</style>
+<svg width="960" height="500">
+</svg>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+
+
+// PARAMS
+var pos_file = "dataset12_pos.csv";
+var spike_file = "dataset12_spikes.csv";
+var restcol = "#a6cee3";
+var spikecol = "#1f78b4";
+var playback_rate = 1;
+
+
+
+var svg = d3.select("svg"),
+    margin = {right: 50, left: 50},
+    width = +svg.attr("width") - margin.left - margin.right,
+    height = +svg.attr("height");
+
+var descrip = svg.append("text")
+    .attr("x", 50)
+    .attr("y", height-80)
+    .text(String(playback_rate).concat("x").concat(" speed"))
+    .style("font-family", "sans-serif")
+    .style("font-size", "12px");
+
+var time_text = svg.append("text")
+    .attr("x", 50)
+    .attr("y", height-100)
+    .style("font-family", "sans-serif")
+    .style("font-size", "12px");
+
+var x = d3.scaleLinear()
+    .domain([0, 1000])
+    .range([0, width])
+    .clamp(true);
+
+var slider = svg.append("g")
+    .attr("class", "slider")
+    .attr("transform", "translate(" + margin.left + "," + height * 0.9 + ")");
+
+var circpos = [];
+var circles, spike_data, t;
+d3.csv(pos_file, function(data) {
+  data.forEach(function(d,i) {
+    circpos[i] = [+d.x, +d.y];
+    svg.append("circle")
+      .style("fill",restcol)
+      .attr("class","neuron")
+      .attr("cy", -circpos[i][1]*height*.75+height*.5-height*.06)
+      .attr("cx", circpos[i][0]*height*.75+width*.5+height*.1)
+      .attr("r", 5);
+  });
+  console.log("fin")
+  circles = svg.selectAll("circle")
+    .filter(".neuron");
+  
+  d3.text(spike_file, function(text) {
+    var result = "s\n" + text; 
+    spike_data = d3.csvParse(result);
+    start();
+  });
+});
+
+function update_handle(h) {
+  handle.attr("cx", x(h));
+  t = Math.floor(x(h)/width*spike_data.length);
+  circles
+    .interrupt()
+    .style("fill",restcol)
+    .attr("r",5);
+}
+
+slider.append("line")
+    .attr("class", "track")
+    .attr("x1", x.range()[0])
+    .attr("x2", x.range()[1])
+  .select(function() { return this.parentNode.appendChild(this.cloneNode(true)); })
+    .attr("class", "track-inset")
+  .select(function() { return this.parentNode.appendChild(this.cloneNode(true)); })
+    .attr("class", "track-overlay")
+    .call(d3.drag()
+        .on("start.interrupt", function() { slider.interrupt(); })
+        .on("start drag", function() { update_handle(x.invert(d3.event.x)); }));
+
+var handle = slider.insert("circle", ".track-overlay")
+    .attr("class", "handle")
+    .attr("r", 9)
+    .style("fill","black");
+
+function start() {
+  console.log("hi")
+  t=0;
+  var inter = setInterval(function() {
+    t=t+1;
+    updateData();
+  }, 33.33*playback_rate);
+}
+
+var color = d3.scaleOrdinal(d3.schemeCategory20);
+  //.domain([1,circpos.length-1]);
+console.log(color(2))
+
+function updateData() {
+  handle.attr("cx", x(x.invert(t/spike_data.length*width)));
+  time_text.text(String(Math.floor(t*33.33/1000)).concat("s"));
+  if (t<spike_data.length) {
+    var spikes = [];
+    for (i = 0; i < spike_data[t].s.length; i++) {
+        spikes[i] = spike_data[t].s.charCodeAt(i)-48;
+    }
+
+    circles
+        .data(spikes)
+        .filter(function(d,i) {return d;})
+        .interrupt()
+        .transition()
+        .duration(0)
+        .attr("r",20)
+        .style("fill",spikecol)
+        .transition()
+        .duration(800*playback_rate)
+        .style("fill",restcol)
+        .ease(d3.easeExpOut)
+        .attr("r",5);
+  } else {
+    // loop when you get to the end
+    t=0;
+  }
+}
+
+</script>
