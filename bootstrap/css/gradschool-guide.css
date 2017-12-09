@@ -1,0 +1,84 @@
+body {
+  font: normal 12px/1.65 "Verdana", "Helvetica", "Arial", sans-serif;
+}
+
+.hero-unit{padding:0px;margin-bottom:5px;font-size:18px;font-weight:200;line-height:30px;color:inherit;background-color:#eee;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px}
+
+.page-header{padding-bottom:0px;margin:20px 0 5px;border-bottom:1px solid #aaa}
+
+.headers-sidenav {
+  position: fixed;
+  width: 228px;
+  margin: 10px 0 0;
+  padding: 0;
+  background-color: #fff;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+     -moz-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+          box-shadow: 0 1px 4px rgba(0,0,0,.065);
+}
+.headers-sidenav > li > a {
+  display: block;
+  width: 190px \9;
+  margin: 0 0 -1px;
+  padding: 8px 14px;
+  border: 1px solid #a0a0a0;
+}
+.headers-sidenav > li.first-child > a {
+  -webkit-border-radius: 6px 6px 0 0;
+     -moz-border-radius: 6px 6px 0 0;
+          border-radius: 6px 6px 0 0;
+}
+.headers-sidenav > li.last-child > a {
+  -webkit-border-radius: 0 0 6px 6px;
+     -moz-border-radius: 0 0 6px 6px;
+          border-radius: 0 0 6px 6px;
+}
+.headers-sidenav > .active > a {
+  position: relative;
+  z-index: 2;
+  padding: 9px 15px;
+  border: 0;
+}
+/* Chevrons */
+.headers-sidenav .icon-chevron-right {
+  float: right;
+  margin-top: 2px;
+  margin-right: -6px;
+  opacity: .25;
+}
+.headers-sidenav .icon-bookmark {
+  float: right;
+  margin-top: 2px;
+  margin-right: -6px;
+  opacity: .75;
+}
+
+.headers-sidenav > li > a:hover {
+  background-color: #f5f5f5;
+  -webkit-transition: background-color .1s linear .1s;
+  transition: background-color .1s linear .1s;
+}
+.headers-sidenav a:hover .icon-chevron-right {
+  opacity: .5;
+  -webkit-transition: opacity .1s linear;
+  transition: opacity .1s linear;
+}
+
+.headers-sidenav .active .icon-chevron-right,
+.headers-sidenav .active a:hover .icon-chevron-right {
+  background-image: url(img/glyphicons-halflings-white.png);
+  opacity: 1;
+}
+
+h1.padtop {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.hide-navigation-container {
+  text-align: right;
+}
