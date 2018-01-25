@@ -9,7 +9,7 @@ The data here comes from [Britten et al. 1992](http://www.neuralsignal.org/data/
 
 ## Goal
 
-![alt text](https://github.com/stevensonlab/teaching/raw/master/sand/labs/lab1/output.png)
+![alt text](https://github.com/stevensonlab/teaching/raw/master/sand/labs/lab1/assets/output.png)
 
 ## Part 1: Plot a single trial spike train
 
