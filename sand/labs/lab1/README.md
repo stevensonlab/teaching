@@ -4,7 +4,7 @@ This lab is designed to introduce you to programming with matlab and working wit
 
 Start by downloading the matlab scripts (.m files) and data (.mat file).
 
-The data here comes from [Britten et al. 1992](http://www.neuralsignal.org/data/09/nsa2009.1.html) and was analyzed in Bair and Koch, 1996. This data illustrates the, somewhat surprising, finding that neurons in MT respond to, not just to the direction but also, the detailed structure of random dot stimuli.
+The data here comes from [Britten et al. 1992](http://www.neuralsignal.org/data/09/nsa2009.1.html) and was analyzed in Bair and Koch, 1996. This data illustrates the, somewhat surprising, finding that neurons in MT respond to, not just the direction but also, the detailed structure of random dot stimuli.
 
 
 ## Goal
