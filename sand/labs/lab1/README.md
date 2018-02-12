@@ -47,3 +47,20 @@ Now make `getPSTH.m` into a `function` that takes a input and returns the PSTH v
 ## Part 6: Make a script to plot the final output
 
 Using the functions `getPSTH.m` and `plotSpikeRaster.m` complete the script started in `lab1.m` so that when you run it it generates the desired plot with the raster and psth aligned.
+
+## Minimal python example
+
+	import scipy.io
+	import numpy as np
+	import matplotlib.pyplot as plt
+
+	mat = scipy.io.loadmat('nsa2009_1_pyfriendly.mat')
+
+	neuron=32
+	data = mat.get('data')
+
+	plt.axis([0,2000,0,data.shape[1]])
+	for i in range(data.shape[1]-1):
+    	st = np.squeeze(data[neuron,i])
+    	plt.plot(st,np.zeros(st.shape)+i,'b.')
+	plt.show()

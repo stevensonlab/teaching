@@ -56,3 +56,17 @@ Matlab has built-in functions to do the optimization, but they require an error 
 
 ## Part 5: Plot your model fit alongside the data
 
+## Minimal python example
+
+	import scipy.io
+	import numpy as np
+	import matplotlib.pyplot as plt
+
+	mat = scipy.io.loadmat('data_v1_binned_moving.mat')
+	data = mat.get('data')[0][0]
+
+	conditions = data['conditions'][0][0]
+	spike_count = data['spikes'][0][0]
+
+	neuron=0
+	plt.plot(np.sum(spike_count[neuron,:,24:79,:],axis=1))

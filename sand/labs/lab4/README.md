@@ -46,3 +46,14 @@ Using `doc` may be helpful to understand the inputs and outputs of the spectrogr
 ## Part 4: Compare Wide- and Narrow-band Spectrograms
 
 One of the central ideas in frequency analysis is the uncertainty principle. Vary the window size of your `spectrogram` to explore how this alters your STFT.
+
+## Minimal python example
+
+	import scipy.io
+	import numpy as np
+	import matplotlib.pyplot as plt
+
+	mat = scipy.io.loadmat('chb_sample.mat')
+	data = mat.get('data')[0]
+
+	plt.plot(data[0])
