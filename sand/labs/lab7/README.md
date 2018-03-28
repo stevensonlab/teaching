@@ -1,6 +1,6 @@
 # Lab 7
 
-This lab is designed to introduce you to two concepts in unsupervised learning: dimensionality reduction and clustering. The goal is to complete a script that will replicate a (simplified) spike sorting pipeline using spike waveforms from a polytrode recording in rat hippocampus.
+This lab is designed to introduce you to two concepts in unsupervised learning: dimensionality reduction and clustering. The goal is to complete a script that will replicate a (simplified) spike sorting pipeline using spike waveforms from a multielectrode recording in rat hippocampus.
 
 Start by downloading the code (.m file) and data (.mat file).
 
