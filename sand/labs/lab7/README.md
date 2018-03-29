@@ -20,7 +20,7 @@ Start by plotting `X`.
 
 Use `pca` to reduce the dimensionality of the spike waveforms. Plot the scores for the first 2 pricipal components in a scatter plot. What does the structure in this plot tell you? You can also plot the pricipal components themselves. What does the structure in this plot tell you?
 
-Choosking the number of relevant dimensions is an important consideration in any dimensionality reduction technique. Calculate the variance explained as a function of the number of components. What does this plot tell you?
+Choosing the number of relevant dimensions is an important consideration in any dimensionality reduction technique. Calculate the variance explained as a function of the number of components. What does this plot tell you?
 
 
 ## Part 3: k-Means Clustering
