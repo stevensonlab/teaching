@@ -47,3 +47,6 @@ Now let's use these tools to understand the experimental data. Write a loop that
 
 	plt.plot(voltage_soma[:,0]) # plot the somatic voltage for trial 1
 	plt.plot(voltage_dend[:,0]) # plot the dendritic voltage for trial 1
+
+	# for the joint distribution you can use something like...
+	# H, xedges, yedges = np.histogram2d(voltage_soma[:,0], voltage_dend[:,0],100)
