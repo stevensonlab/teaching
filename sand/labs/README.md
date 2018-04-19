@@ -9,3 +9,4 @@
 ### [Lab 7](https://github.com/stevensonlab/teaching/tree/master/sand/labs//lab7) - Spike Sorting (PCA and k-means)
 ### [Lab 8](https://github.com/stevensonlab/teaching/tree/master/sand/labs//lab8) - Entropy and Mutual Information
 ### [Lab 9](https://github.com/stevensonlab/teaching/tree/master/sand/labs//lab9) - Bayesian Decoding
+### [Lab 10](https://github.com/stevensonlab/teaching/tree/master/sand/labs//lab10) - LIF Neuron Simulation
