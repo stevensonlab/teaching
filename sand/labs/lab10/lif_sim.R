@@ -23,7 +23,7 @@ I <- mu + st*rnorm(T)
 V[1] <- -65.0001   # initial membrane potential (mV)
 for (t in 2:T) {      # ms timesteps
   # Integrate...
-  V[t] <- V[t-1] + (I[t] - (V[t-1]-E_L)/R)/tau
+  V[t] <- V[t-1] + (I[t]*R - (V[t-1]-E_L))/tau
 
   # Fire...
   if (V[t]>Vthresh) {
