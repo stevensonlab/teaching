@@ -4,7 +4,7 @@ This lab is designed to introduce you to frequency analysis. The goal is to comp
 
 Start by downloading the matlab scripts (.m files) and data (.mat files).
 
-chb_sample.mat comes from Children's Hospital Boston, and consists of [EEG recordings](http://www.physionet.org/pn6/chbmit/) from pediatric subjects with intractable seizures.
+chb_sample.mat comes from Children's Hospital Boston, and consists of [EEG recordings](https://physionet.org/content/chbmit/1.0.0/) from pediatric subjects with intractable seizures.
 
 
 ## Goal
