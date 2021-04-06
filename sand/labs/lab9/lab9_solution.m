@@ -1,6 +1,6 @@
 %% Plot the response of 1 neuron on the different (L vs R) conditions
 
-neuron=3;
+neuron=1;
 
 figure(1)
 clf
