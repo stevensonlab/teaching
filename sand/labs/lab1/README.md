@@ -50,7 +50,7 @@ Using the functions `getPSTH.m` and `plotSpikeRaster.m` complete the script star
 
 ## Minimal python example
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1g1gqjQDi8rqy-W0opJNHj3dCw97wE51C?usp=sharing]
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)(https://colab.research.google.com/drive/1g1gqjQDi8rqy-W0opJNHj3dCw97wE51C?usp=sharing]
 
 	import scipy.io
 	import numpy as np
