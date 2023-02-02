@@ -41,9 +41,9 @@ The `polyval` function takes x values and parameters as input and returns estima
 Complete the following code to find bootstrap distributions for the parameters of your regression.
 
 	nboot = 1000;
-	[bootstat,bootsam] = bootstrp(nboot,'',???);
 	for i=1:nboot
-	    bboot(i,:) = polyfit(???);
+    		sample_indices = randsample(n,n,true);
+    		bboot(i,:) = polyfit(???);
 	end
 
 By using each of these samples in `polyval` you can find standard errors for your predictions of y.
