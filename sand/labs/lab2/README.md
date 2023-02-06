@@ -41,9 +41,9 @@ The `polyval` function takes x values and parameters as input and returns estima
 Complete the following code to find bootstrap distributions for the parameters of your regression.
 
 	nboot = 1000;
-	[bootstat,bootsam] = bootstrp(nboot,'',???);
 	for i=1:nboot
-	    bboot(i,:) = polyfit(???);
+    		sample_indices = randsample(n,n,true);
+    		bboot(i,:) = polyfit(???);
 	end
 
 By using each of these samples in `polyval` you can find standard errors for your predictions of y.
@@ -51,3 +51,11 @@ By using each of these samples in `polyval` you can find standard errors for you
 ## Bonus
 
 Compare your bootstrap standard errors to those output by `regress` or `glmfit`.
+
+## Python Examples
+
+Tutorial Version:
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1DDTzlWNxoruA49_AsZnLkW3r1hVG49FF?usp=sharing)
+
+Solution:
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1t4lTlC3LdTH0b8lTaLuFrwgy2LSS4TJb?usp=sharing)

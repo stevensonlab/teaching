@@ -9,6 +9,9 @@ data = readtable('Hursh1936.csv');
 data = readtable('BodyBrain.csv');
 
 data = table2array(data);
+x = data(:,1);
+y = data(:,2);
+n = size(data,1);
 
 %% 2.1 Bootstrap to estimate the mean and sem of the x-variable
 
@@ -30,8 +33,8 @@ b = polyfit(???);
 %% 2.5 Bootstrap to find error-bars for the model parameters
 
 nboot = 1000;
-[bootstat,bootsam] = bootstrp(nboot,'',???);
 for i=1:nboot
+    sample_indices = randsample(n,n,true);
     bboot(i,:) = polyfit(???);
 end
 
