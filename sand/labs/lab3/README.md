@@ -58,6 +58,13 @@ Matlab has built-in functions to do the optimization, but they require an error 
 
 ## Minimal python example
 
+Tutorial Version:
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XF5FxbAAPTG1-1IF9PGigMA_s5X-Zv8y?usp=sharing)
+
+Solution:
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1_C_Mezz1ROwunWHBSj-RNnyCXPDSygTq?usp=sharing)
+
+
 	import scipy.io
 	import numpy as np
 	import matplotlib.pyplot as plt
