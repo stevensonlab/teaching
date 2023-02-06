@@ -56,7 +56,7 @@ Matlab has built-in functions to do the optimization, but they require an error 
 
 ## Part 5: Plot your model fit alongside the data
 
-## Minimal python example
+## Python examples
 
 Tutorial Version:
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XF5FxbAAPTG1-1IF9PGigMA_s5X-Zv8y?usp=sharing)
