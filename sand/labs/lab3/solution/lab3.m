@@ -60,7 +60,7 @@ xlabel('Stimulus Direction [deg]')
 f = @(b,x) exp(b(1)+b(2)*cos(2*(x-b(3))));
 b_mse = nlinfit(x_matrix(:),spike_counts(:),f,[1 0.1 pi]);
 
-%% Bonus... GLM version
+%% Bonus...  version using a Generalized Linear Model (GLM)
 
 X = [cos(2*x_matrix(:)) sin(2*x_matrix(:))];
 [b_mle,dev,stats] = glmfit(X, spike_counts(:),'poisson');
