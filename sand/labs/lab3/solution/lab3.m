@@ -59,3 +59,23 @@ xlabel('Stimulus Direction [deg]')
 
 f = @(b,x) exp(b(1)+b(2)*cos(2*(x-b(3))));
 b_mse = nlinfit(x_matrix(:),spike_counts(:),f,[1 0.1 pi]);
+
+%% Bonus... GLM version
+
+X = [cos(2*x_matrix(:)) sin(2*x_matrix(:))];
+[b_mle,dev,stats] = glmfit(X, spike_counts(:),'poisson');
+Xgrid = [cos(2*x0') sin(2*x0')];
+[yhat,dylo,dyhi] = glmval(b_mle,Xgrid,'log',stats);
+
+figure(5)
+scatter(x_matrix(:)*180/pi,spike_counts(:),spike_counts(:)*0+60,'filled','MarkerFaceAlpha',0.4)     % plot the data
+hold on
+x0 = linspace(-10,345,256)*pi/180;
+plot(x0*180/pi,yhat,'LineWidth',2) % plot the prediction
+plot(x0*180/pi,yhat-dylo,'k--','LineWidth',1) % 95% confidence interval
+plot(x0*180/pi,yhat+dyhi,'k--','LineWidth',1)
+hold off
+xlim([min(x0) max(x0)]*180/pi)
+box off; set(gca,'TickDir','out')
+ylabel('Spike Rate')
+xlabel('Stimulus Direction [deg]')
