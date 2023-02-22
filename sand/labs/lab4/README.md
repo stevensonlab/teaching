@@ -47,7 +47,15 @@ Using `doc` may be helpful to understand the inputs and outputs of the spectrogr
 
 One of the central ideas in frequency analysis is the uncertainty principle. Vary the window size of your `spectrogram` to explore how this alters your STFT.
 
-## Minimal python example
+## Python examples
+
+Tutorial Version:
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1H6Qodzdq8ZoP1DhZTPUKUCHB22YtkZkE?usp=sharing)
+
+Solution:
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XjB2jLXsGX-bRgZ8Oo0Ukhu78YASOjps?usp=sharing)
+
+
 
 	import scipy.io
 	import numpy as np
