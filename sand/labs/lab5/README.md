@@ -32,7 +32,16 @@ Use the `cwt` function (requires the wavelet toolbox in matlab) to calcualte a w
 
 A common finding in hippocampal research is that the hippocampal LFP amplitude in the theta band (~8-12Hz in rats) is correlated with an animal's speed. Does this relationship exist in this data?
 
-## Minimal python example
+
+## Python examples
+
+Tutorial Version:
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/16QCRWLEu7EgAMIOHIFyNHgTKEaeJTusP?usp=sharing)
+
+Solution:
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1oKfjImVzpYF7J5VQUxiOJH0l7Xm_NpH3?usp=sharing)
+
+
 
 	import scipy.io
 	import numpy as np
