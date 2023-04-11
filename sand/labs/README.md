@@ -10,4 +10,4 @@
 ### [Lab 8](https://github.com/stevensonlab/teaching/tree/master/sand/labs//lab8) - Entropy and Mutual Information
 ### [Lab 9](https://github.com/stevensonlab/teaching/tree/master/sand/labs//lab9) - Bayesian Decoding
 ### [Lab 10](https://github.com/stevensonlab/teaching/tree/master/sand/labs//lab10) - LIF Neuron Simulation
-### [Lab 10](https://github.com/stevensonlab/teaching/tree/master/sand/labs//lab11) - Calcium Imaging
+### [Lab 11](https://github.com/stevensonlab/teaching/tree/master/sand/labs//lab11) - Calcium Imaging
