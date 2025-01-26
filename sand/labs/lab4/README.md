@@ -50,10 +50,10 @@ One of the central ideas in frequency analysis is the uncertainty principle. Var
 ## Python examples
 
 Tutorial Version:
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1H6Qodzdq8ZoP1DhZTPUKUCHB22YtkZkE?usp=sharing)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/17wLvwcbhYnASR8UXxvMlajlAHWg7ljJm?usp=sharing)
 
 Solution:
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XjB2jLXsGX-bRgZ8Oo0Ukhu78YASOjps?usp=sharing)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1gjqnCYhN-QcU6m5dCYRXLFDBw1mop0x3?usp=sharing)
 
 
 

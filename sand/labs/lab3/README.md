@@ -59,10 +59,10 @@ Matlab has built-in functions to do the optimization, but they require an error 
 ## Python examples
 
 Tutorial Version:
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XF5FxbAAPTG1-1IF9PGigMA_s5X-Zv8y?usp=sharing)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1pfT_9ujqob3A8aIbDbr4VI07kmkkKGP5?usp=sharing)
 
 Solution:
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1_C_Mezz1ROwunWHBSj-RNnyCXPDSygTq?usp=sharing)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1rmyAl_K1ceTsV_opFt7Syt9zqMZtxk6K?usp=sharing)
 
 
 	import scipy.io

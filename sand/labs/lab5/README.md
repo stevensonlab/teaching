@@ -36,10 +36,10 @@ A common finding in hippocampal research is that the hippocampal LFP amplitude i
 ## Python examples
 
 Tutorial Version:
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/16QCRWLEu7EgAMIOHIFyNHgTKEaeJTusP?usp=sharing)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1JyxBBaCpurmon6iZUMZ1S8oOTMMpI8Fi?usp=sharing)
 
 Solution:
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1oKfjImVzpYF7J5VQUxiOJH0l7Xm_NpH3?usp=sharing)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1hwtlIzFwwauy6NY6T4tNKgn8PZRK4ah7?usp=sharing)
 
 
 
